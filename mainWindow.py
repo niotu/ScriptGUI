@@ -1,5 +1,6 @@
 from PyQt5.QtCore import QTimer
-from PyQt5.QtWidgets import QWidget
+from PyQt5.QtGui import QColor
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -11,6 +12,14 @@ class MainWindow(QWidget, Ui_Form):
 
         self.setupUi(self)
 
+        self.pushButton_15.setStyleSheet(ALL_START_STYLE)
+        shadow = QGraphicsDropShadowEffect()
+        shadow.setParent(self.pushButton_15)
+        shadow.setEnabled(True)
+        shadow.setColor(QColor(256 // 5, 256 // 5, 256 // 5))
+        shadow.setXOffset(0)
+        shadow.setBlurRadius(15)
+        self.pushButton_15.setGraphicsEffect(shadow)
         self.pushButton_15.setText('ЗАПУСТИТЬ\nВСЕ')
         self.pushButton_15.clicked.connect(self.start_all)
 
@@ -21,7 +30,17 @@ class MainWindow(QWidget, Ui_Form):
         for i, button in enumerate(self.buttons):
             text = SCRIPT_NAMES[i].upper()
             button.setText(text)
-            # button.setProperty('common', True)
+
+            shadow = QGraphicsDropShadowEffect()
+            shadow.setParent(button)
+            shadow.setEnabled(True)
+            shadow.setColor(QColor(256 // 5, 256 // 5, 256 // 5))
+            shadow.setXOffset(0)
+            shadow.setBlurRadius(15)
+
+            button.setGraphicsEffect(shadow)
+
+            button.setProperty('state', 'common')
             button.setStyleSheet(COMMON_STYLE)
 
         self.pushButton.clicked.connect(lambda: self.start_current(self.pushButton))
@@ -44,7 +63,20 @@ class MainWindow(QWidget, Ui_Form):
             self.start_current(button)
 
     def start_current(self, button):
-        text = button.text()
-        button.setStyleSheet(LOADING_STYLE)
+        self.set_state(button, 'loading')
+        # print(button.property('state'))
         timer = QTimer()
-        timer.singleShot(3000, lambda: button.setStyleSheet(COMMON_STYLE))
+        timer.singleShot(3000, lambda: self.set_state(button, 'common'))
+
+    def set_state(self, button, state):
+        text = button.text()
+        if text == 'АРГО':
+            button.setText(text + '\nотработал')
+            button.setProperty('state', state)
+        elif text == 'РАШ':
+            button.setProperty('state', 'error')
+        else:
+            button.setProperty('state', state)
+        button.style().unpolish(button)
+        button.style().polish(button)
+        button.update()
