@@ -1,10 +1,8 @@
 from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QWidget
 
-
 from const.CONSTANTS import *
 from const.page import Ui_Form
-from process import Process
 
 
 class MainWindow(QWidget, Ui_Form):
@@ -12,7 +10,6 @@ class MainWindow(QWidget, Ui_Form):
         super(MainWindow, self).__init__()
 
         self.setupUi(self)
-        # self.common = QProperty
 
         self.pushButton_15.setText('ЗАПУСТИТЬ\nВСЕ')
         self.pushButton_15.clicked.connect(self.start_all)
@@ -24,7 +21,7 @@ class MainWindow(QWidget, Ui_Form):
         for i, button in enumerate(self.buttons):
             text = SCRIPT_NAMES[i].upper()
             button.setText(text)
-            button.setProperty('common', True)
+            # button.setProperty('common', True)
             button.setStyleSheet(COMMON_STYLE)
 
         self.pushButton.clicked.connect(lambda: self.start_current(self.pushButton))
@@ -48,12 +45,6 @@ class MainWindow(QWidget, Ui_Form):
 
     def start_current(self, button):
         text = button.text()
+        button.setStyleSheet(LOADING_STYLE)
         timer = QTimer()
-        # if button.isChecked():
-        #     button.setStyleSheet(LOADING_STYLE)
-        #     print(text)
-
-    def return_style(self, button):
-        button.setChecked(False)
-        button.setStyleSheet(COMMON_STYLE)
-        print(button.text(), button.isChecked())
+        timer.singleShot(3000, lambda: button.setStyleSheet(COMMON_STYLE))
