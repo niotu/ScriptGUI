@@ -1,9 +1,9 @@
-from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
+from process import Script
 
 
 class MainWindow(QWidget, Ui_Form):
@@ -64,19 +64,22 @@ class MainWindow(QWidget, Ui_Form):
 
     def start_current(self, button):
         self.set_state(button, 'loading')
-        # print(button.property('state'))
-        timer = QTimer()
-        timer.singleShot(3000, lambda: self.set_state(button, 'common'))
+        self.start_script(button.text())
 
     def set_state(self, button, state):
-        text = button.text()
-        if text == 'АРГО':
-            button.setText(text + '\nотработал')
-            button.setProperty('state', state)
-        elif text == 'РАШ':
-            button.setProperty('state', 'error')
-        else:
-            button.setProperty('state', state)
+        button.setProperty('state', state)
         button.style().unpolish(button)
         button.style().polish(button)
         button.update()
+
+    def start_script(self, name):
+        name = name.lower()
+        script = Script(name)
+        script.finish.connect(self.script_finished)
+        try:
+            script.run()
+        except Exception as e:
+            print(name, e)
+
+    def script_finished(self):
+        print('finished')
