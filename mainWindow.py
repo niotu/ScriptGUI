@@ -1,4 +1,5 @@
-from PyQt5.QtGui import QColor
+from PyQt5.QtCore import QSize
+from PyQt5.QtGui import QColor, QIcon
 from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect
 
 from const.CONSTANTS import *
@@ -9,6 +10,10 @@ from process import Script
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.common_icon = QIcon('icons/common.png')
+        self.done_icon = QIcon('icons/done.png')
+        self.loading_icon = QIcon('icons/loading.png')
+        self.error_icon = QIcon('icons/broken.png')
 
         self.setupUi(self)
 
@@ -39,7 +44,8 @@ class MainWindow(QWidget, Ui_Form):
             shadow.setBlurRadius(15)
 
             button.setGraphicsEffect(shadow)
-
+            button.setIcon(self.common_icon)
+            # button.setIconSize(QSize(168, 168))
             button.setProperty('state', 'common')
             button.setStyleSheet(COMMON_STYLE)
 
@@ -67,10 +73,16 @@ class MainWindow(QWidget, Ui_Form):
         self.start_script(button.text())
 
     def set_state(self, button, state):
-        button.setProperty('state', state)
-        button.style().unpolish(button)
-        button.style().polish(button)
-        button.update()
+        # button.setProperty('state', state)
+        # button.style().unpolish(button)
+        # button.style().polish(button)
+        # button.update()
+        if state == 'loading':
+            button.setIcon(self.loading_icon)
+        elif state == 'done':
+            button.setIcon(self.done_icon)
+        elif state == 'error':
+            button.setIcon(self.error_icon)
 
     def start_script(self, name):
         name = name.lower()

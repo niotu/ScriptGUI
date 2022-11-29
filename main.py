@@ -14,7 +14,7 @@ def main():
     app = QApplication(sys.argv)
     application = MainWindow()
     application.setWindowTitle('ScripGUI')
-    application.setWindowIcon(QIcon('stuff/logo.png'))
+    application.setWindowIcon(QIcon('icons/logo.png'))
     application.show()
     application.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
     sys.excepthook = except_hook
