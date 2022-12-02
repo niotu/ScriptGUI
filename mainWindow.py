@@ -1,6 +1,8 @@
-from PyQt5.QtCore import QTimer
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect
+import os
+
+from PyQt5.QtCore import QProcess, Qt
+from PyQt5.QtGui import QColor, QIcon, QPixmap
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -9,6 +11,10 @@ from const.page import Ui_Form
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.common_icon = QPixmap('icons/circle.png')
+        self.done_icon = QPixmap('icons/done.png')
+        self.loading_icon = QPixmap('icons/loading.png')
+        self.error_icon = QPixmap('icons/broken.png')
 
         self.setupUi(self)
 
@@ -18,7 +24,7 @@ class MainWindow(QWidget, Ui_Form):
         shadow.setEnabled(True)
         shadow.setColor(QColor(256 // 5, 256 // 5, 256 // 5))
         shadow.setXOffset(0)
-        shadow.setBlurRadius(15)
+        shadow.setBlurRadius(20)
         self.pushButton_15.setGraphicsEffect(shadow)
         self.pushButton_15.setText('ЗАПУСТИТЬ\nВСЕ')
         self.pushButton_15.clicked.connect(self.start_all)
@@ -39,7 +45,14 @@ class MainWindow(QWidget, Ui_Form):
             shadow.setBlurRadius(15)
 
             button.setGraphicsEffect(shadow)
+            # button.setIcon(self.common_icon)
+            circle = QPixmap('icons/circle.png')
 
+            label = QLabel(button)
+            label.setPixmap(circle)
+            label.setStyleSheet('background: transparent;')
+            label.move(24, 24)
+            label.setParent(button)
             button.setProperty('state', 'common')
             button.setStyleSheet(COMMON_STYLE)
 
@@ -58,25 +71,69 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_13.clicked.connect(lambda: self.start_current(self.pushButton_13))
         self.pushButton_14.clicked.connect(lambda: self.start_current(self.pushButton_14))
 
+        self.script_path = 'python ' + os.path.join(os.path.dirname(__file__))
+
     def start_all(self):
         for button in self.buttons:
             self.start_current(button)
 
     def start_current(self, button):
         self.set_state(button, 'loading')
-        # print(button.property('state'))
-        timer = QTimer()
-        timer.singleShot(3000, lambda: self.set_state(button, 'common'))
+        self.start_script(button.text())
 
     def set_state(self, button, state):
-        text = button.text()
-        if text == 'АРГО':
-            button.setText(text + '\nотработал')
-            button.setProperty('state', state)
-        elif text == 'РАШ':
-            button.setProperty('state', 'error')
+        # button.setProperty('state', state)
+        # button.style().unpolish(button)
+        # button.style().polish(button)
+        # button.update()
+        label = button.children()[-1]
+        if state == 'loading':
+            label.setPixmap(self.loading_icon)
+        elif state == 'done':
+            label.setPixmap(self.done_icon)
+        elif state == 'error':
+            label.setPixmap(self.error_icon)
+
+    def start_script(self, name):
+        prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
+
+        path = f'\scripts\{prname}.py'
+        path = self.script_path + path
+
+        print(path)
+
+        self.process = QProcess(self)
+        self.process.errorOccurred.connect(self.error)
+        self.process.finished.connect(lambda: self.done(name))
+        self.process.readyRead.connect(self.readout)
+        self.process.start(path)
+        print('-------' + path + '--------------------------------')
+        print(self.process.state())
+
+    def readout(self):
+        print(self.process.readAll())
+
+    def done(self, name):
+        name = name.upper()
+        self.is_completed = True
+        print('DONE DONE DONE', name)
+        bad = ['АРГО', 'КУРТКИ', 'ФИОРИТА']
+        if name not in bad:
+            self.set_state(self.find_widget_by_name(name), 'done')
         else:
-            button.setProperty('state', state)
-        button.style().unpolish(button)
-        button.style().polish(button)
-        button.update()
+            self.set_state(self.find_widget_by_name(name), 'error')
+
+    def error(self):
+        print('e')
+
+    def find_widget_by_name(self, name):
+        for button in self.buttons:
+            if button.text() == name:
+                return button
+
+    def format_name(self, name):
+        if len(name) > 7:
+            return name.replace(' ', '\n')
+
+    def startAnimation(self):
+        pass
