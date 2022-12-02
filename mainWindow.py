@@ -95,16 +95,16 @@ class MainWindow(QWidget, Ui_Form):
             label.setPixmap(self.error_icon)
 
     def start_script(self, name):
-        name = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
+        prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
 
-        path = f'\scripts\{name}.py'
+        path = f'\scripts\{prname}.py'
         path = self.script_path + path
 
         print(path)
 
         self.process = QProcess(self)
         self.process.errorOccurred.connect(self.error)
-        self.process.finished.connect(self.done)
+        self.process.finished.connect(lambda: self.done(name))
         self.process.readyRead.connect(self.readout)
         self.process.start(path)
         print('-------' + path + '--------------------------------')
@@ -113,12 +113,27 @@ class MainWindow(QWidget, Ui_Form):
     def readout(self):
         print(self.process.readAll())
 
-    def done(self):
+    def done(self, name):
+        name = name.upper()
         self.is_completed = True
-        print('DONE DONE DONE')
+        print('DONE DONE DONE', name)
+        bad = ['АРГО', 'КУРТКИ', 'ФИОРИТА']
+        if name not in bad:
+            self.set_state(self.find_widget_by_name(name), 'done')
+        else:
+            self.set_state(self.find_widget_by_name(name), 'error')
 
     def error(self):
         print('e')
+
+    def find_widget_by_name(self, name):
+        for button in self.buttons:
+            if button.text() == name:
+                return button
+
+    def format_name(self, name):
+        if len(name) > 7:
+            return name.replace(' ', '\n')
 
     def startAnimation(self):
         pass
