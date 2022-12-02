@@ -1,6 +1,7 @@
 import os
 import sys
 
+from PyQt5 import QtCore
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSizePolicy
 
@@ -17,6 +18,7 @@ def main():
     application = MainWindow()
     application.setWindowTitle('ScripGUI')
     application.setWindowIcon(QIcon('icons/logo.png'))
+    application.setWindowFlag(QtCore.Qt.FramelessWindowHint)
     application.show()
     application.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
     sys.excepthook = except_hook

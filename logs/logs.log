@@ -4478,3 +4478,351 @@
 2022-12-02 19:49:36,483 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
 2022-12-02 19:49:36,490 - const.CONSTANTS - INFO - (0, '–¿ÿ')
 2022-12-02 19:49:36,491 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 19:50:48,844 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 19:50:49,253 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 19:50:49,253 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 19:50:50,668 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 19:50:50,672 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 19:50:50,675 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 19:50:50,679 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 19:50:50,683 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 19:50:50,688 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 19:50:50,694 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 19:50:50,700 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 19:50:50,706 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 19:50:50,713 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 19:50:50,718 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 19:50:50,735 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 19:50:50,741 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 19:50:50,752 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 19:50:51,599 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 19:50:51,599 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 19:50:51,624 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 19:50:51,624 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 19:50:51,778 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 19:50:51,779 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 19:50:51,800 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 19:50:51,800 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 19:50:51,816 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 19:50:51,817 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 19:50:51,850 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 19:50:51,850 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 19:50:51,871 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 19:50:51,871 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 19:50:51,895 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 19:50:51,896 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 19:50:51,905 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 19:50:51,905 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 19:50:51,913 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 19:50:51,913 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 19:50:51,925 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 19:50:51,925 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 19:50:51,933 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 19:50:51,934 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 19:50:51,964 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 19:50:51,964 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 19:50:51,976 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 19:50:51,976 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 19:50:54,363 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 19:50:54,728 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 19:50:54,729 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 21:34:00,000 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 21:34:00,004 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 21:34:00,008 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 21:34:00,012 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 21:34:00,017 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 21:34:00,022 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 21:34:00,026 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 21:34:00,033 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 21:34:00,040 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 21:34:00,046 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 21:34:00,054 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 21:34:00,061 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 21:34:00,067 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 21:34:00,072 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 21:34:00,885 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 21:34:00,886 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 21:34:00,946 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 21:34:00,946 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 21:34:00,955 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 21:34:00,955 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 21:34:00,961 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 21:34:00,962 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 21:34:01,005 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 21:34:01,005 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 21:34:01,023 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 21:34:01,023 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 21:34:01,029 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 21:34:01,029 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 21:34:01,033 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 21:34:01,033 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 21:34:01,057 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 21:34:01,058 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 21:34:01,070 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 21:34:01,070 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 21:34:01,071 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 21:34:01,071 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 21:34:01,099 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 21:34:01,099 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 21:34:01,104 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 21:34:01,104 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 21:34:01,107 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 21:34:01,107 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 21:34:04,005 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 21:34:04,348 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 21:34:04,348 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:00:44,801 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:00:45,140 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:00:45,140 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:36:31,822 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:36:31,825 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:36:31,828 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:36:31,832 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:36:31,837 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:36:31,841 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:36:31,847 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:36:31,852 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:36:31,860 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:36:31,868 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:36:31,873 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:36:31,881 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:36:31,890 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:36:31,903 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:36:32,706 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:36:32,707 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:36:32,840 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:36:32,840 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:36:32,882 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:36:32,882 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:36:32,902 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:36:32,902 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:36:32,990 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:36:32,990 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 22:36:33,014 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:36:33,014 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:36:33,018 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:36:33,018 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:36:33,023 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:36:33,023 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:36:33,024 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:36:33,024 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:36:33,052 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:36:33,052 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:36:33,056 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:36:33,056 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:36:33,072 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:36:33,072 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:36:33,072 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:36:33,072 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:36:33,076 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:36:33,076 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:37:29,322 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:37:29,326 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:37:29,330 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:37:29,334 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:37:29,338 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:37:29,343 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:37:29,352 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:37:29,358 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:37:29,369 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:37:29,397 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:37:29,411 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:37:29,426 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:37:29,434 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:37:29,453 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:37:30,337 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:37:30,337 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:37:30,471 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:37:30,471 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:37:30,529 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:37:30,530 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:37:30,552 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:37:30,552 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:37:30,557 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:37:30,557 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:37:30,573 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:37:30,573 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:37:30,581 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:37:30,581 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:37:30,607 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:37:30,608 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:37:30,613 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:37:30,613 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:37:30,668 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:37:30,668 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:37:30,671 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:37:30,672 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:37:30,676 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:37:30,676 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:37:30,678 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:37:30,678 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 22:37:30,703 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:37:30,704 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:37:52,682 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:37:52,686 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:37:52,690 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:37:52,695 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:37:52,699 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:37:52,703 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:37:52,711 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:37:52,723 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:37:52,730 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:37:52,748 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:37:52,763 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:37:52,781 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:37:52,794 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:37:52,804 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:37:53,739 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:37:53,740 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:37:53,740 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:37:53,740 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:37:53,764 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:37:53,764 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:37:53,840 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:37:53,841 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:37:53,859 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:37:53,860 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:37:53,873 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:37:53,874 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:37:53,883 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:37:53,883 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 22:37:53,891 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:37:53,892 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:37:53,894 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:37:53,894 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:37:53,896 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:37:53,896 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:37:53,919 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:37:53,919 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:37:53,922 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:37:53,922 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:37:53,924 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:37:53,924 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:37:53,961 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:37:53,961 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:38:46,967 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:38:46,971 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:38:46,975 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:38:46,979 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:38:46,983 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:38:46,987 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:38:46,991 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:38:46,997 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:38:47,004 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:38:47,008 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:38:47,014 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:38:47,021 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:38:47,028 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:38:47,036 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:38:47,890 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:38:47,890 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:38:47,977 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:38:47,977 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:38:48,000 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:38:48,000 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:38:48,018 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:38:48,018 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:38:48,021 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:38:48,021 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:38:48,029 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:38:48,030 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:38:48,060 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:38:48,061 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 22:38:48,082 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:38:48,082 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:38:48,111 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:38:48,112 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:38:48,122 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:38:48,122 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:38:48,129 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:38:48,129 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:38:48,139 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:38:48,139 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:38:48,143 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:38:48,143 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:38:48,156 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:38:48,156 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:39:26,732 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:39:26,735 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:39:26,740 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:39:26,745 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:39:26,750 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:39:26,755 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:39:26,760 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:39:26,769 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:39:26,775 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:39:26,781 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:39:26,787 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:39:26,795 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:39:26,803 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:39:26,809 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:39:27,831 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:39:27,831 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:39:27,919 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:39:27,919 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:39:27,998 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:39:27,998 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:39:28,056 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:39:28,056 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:39:28,157 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:39:28,157 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:39:28,164 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:39:28,165 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:39:28,173 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:39:28,174 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:39:28,175 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:39:28,176 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')
+2022-12-02 22:39:28,184 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:39:28,184 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:39:28,184 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:39:28,184 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:39:28,197 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:39:28,197 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:39:28,205 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:39:28,205 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:39:28,208 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:39:28,208 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:39:28,215 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:39:28,215 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:41:55,030 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\agata.py--------------------------------
+2022-12-02 22:41:55,033 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\argo.py--------------------------------
+2022-12-02 22:41:55,037 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\etalina.py--------------------------------
+2022-12-02 22:41:55,042 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\fiorita.py--------------------------------
+2022-12-02 22:41:55,046 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\guinda.py--------------------------------
+2022-12-02 22:41:55,050 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\janeli.py--------------------------------
+2022-12-02 22:41:55,055 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\jetty.py--------------------------------
+2022-12-02 22:41:55,062 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\kurtki.py--------------------------------
+2022-12-02 22:41:55,073 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\lcraft.py--------------------------------
+2022-12-02 22:41:55,081 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\sumkistyle.py--------------------------------
+2022-12-02 22:41:55,089 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\bossanova.py--------------------------------
+2022-12-02 22:41:55,095 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\siniylen.py--------------------------------
+2022-12-02 22:41:55,103 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\clevermedia.py--------------------------------
+2022-12-02 22:41:55,109 - const.CONSTANTS - INFO - -------python C:\Users\noitu\work\PycharmProjects\ScriptGUI\scripts\rash.py--------------------------------
+2022-12-02 22:41:56,052 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-02 22:41:56,052 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' ”–“ »')
+2022-12-02 22:41:56,053 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-02 22:41:56,053 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¿√¿“¿')
+2022-12-02 22:41:56,069 - const.CONSTANTS - INFO - (2, '¿–√Œ')
+2022-12-02 22:41:56,069 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:41:56,251 - const.CONSTANTS - INFO - (0, '—”Ã »\n—“»À‹')
+2022-12-02 22:41:56,251 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—”Ã »\n—“»À‹')
+2022-12-02 22:41:56,263 - const.CONSTANTS - INFO - (2, '√»Õƒ¿')
+2022-12-02 22:41:56,263 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 2')
+2022-12-02 22:41:56,272 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-02 22:41:56,272 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'À –¿‘“')
+2022-12-02 22:41:56,282 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-02 22:41:56,282 - const.CONSTANTS - INFO - ('DONE DONE DONE', '‘»Œ–»“¿')
+2022-12-02 22:41:56,284 - const.CONSTANTS - INFO - (0, '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:41:56,284 - const.CONSTANTS - INFO - ('DONE DONE DONE', '—»Õ»…\nÀ≈Õ')
+2022-12-02 22:41:56,296 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-02 22:41:56,296 - const.CONSTANTS - INFO - ('DONE DONE DONE', '∆¿Õ≈À»')
+2022-12-02 22:41:56,308 - const.CONSTANTS - INFO - (0, ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:41:56,308 - const.CONSTANTS - INFO - ('DONE DONE DONE', ' À≈¬≈–\nÃ≈ƒ»¿')
+2022-12-02 22:41:56,310 - const.CONSTANTS - INFO - (0, '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:41:56,310 - const.CONSTANTS - INFO - ('DONE DONE DONE', '¡Œ——¿\nÕŒ¬¿')
+2022-12-02 22:41:56,313 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-02 22:41:56,313 - const.CONSTANTS - INFO - ('DONE DONE DONE', 'ƒ∆≈“»')
+2022-12-02 22:41:56,317 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-02 22:41:56,317 - const.CONSTANTS - INFO - ('DONE DONE DONE', '–¿ÿ')
+2022-12-02 22:41:56,324 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-02 22:41:56,324 - const.CONSTANTS - INFO - ('DONE DONE DONE', '›“¿À»Õ¿')

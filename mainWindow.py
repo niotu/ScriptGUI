@@ -1,9 +1,8 @@
 import os
 
 from PyQt5.QtCore import QProcess
-from PyQt5.QtCore import QProcess
-from PyQt5.QtGui import QColor, QPixmap
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu, QPlainTextEdit
+from PyQt5.QtGui import QColor, QPixmap, QTextCursor
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu, QPushButton
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -13,7 +12,6 @@ from logShower import LogShower
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super(MainWindow, self).__init__()
-
         self.common_icon = QPixmap('icons/common.png')
         self.done_icon = QPixmap('icons/done.png')
         self.loading_icon = QPixmap('icons/loading.png')
@@ -22,6 +20,13 @@ class MainWindow(QWidget, Ui_Form):
         self.log_window = None
 
         self.setupUi(self)
+
+        self.label_2.setText('')
+        self.label_2.resize(32, 20)
+        self.label_2.setStyleSheet(
+            'QLabel{background: transparent} QLabel:hover{background: #E11111}')
+        self.label_2.setPixmap(QPixmap('icons/exit.png'))
+        self.label_2.click.connect(self.exit)
 
         self.pushButton_15.setStyleSheet(ALL_START_STYLE)
         shadow = QGraphicsDropShadowEffect()
@@ -141,6 +146,7 @@ class MainWindow(QWidget, Ui_Form):
         with open('logs/logs.log', 'r') as log:
             lines = log.readlines()[-100:]
         self.log_window.plainTextEdit.setPlainText('\n'.join(lines))
+        self.log_window.plainTextEdit.moveCursor(QTextCursor.End)
         self.log_window.show()
 
     def error(self, e):
@@ -158,3 +164,6 @@ class MainWindow(QWidget, Ui_Form):
 
     def startAnimation(self):
         pass
+
+    def exit(self):
+        self.close()
