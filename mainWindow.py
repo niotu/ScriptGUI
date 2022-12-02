@@ -1,7 +1,5 @@
-import os
-
-from PyQt5.QtCore import QProcess, Qt
-from PyQt5.QtGui import QColor, QIcon, QPixmap
+from PyQt5.QtCore import QProcess
+from PyQt5.QtGui import QColor, QPixmap
 from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel
 
 from const.CONSTANTS import *
@@ -11,7 +9,7 @@ from const.page import Ui_Form
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.common_icon = QPixmap('icons/circle.png')
+        self.common_icon = QPixmap('icons/common.png')
         self.done_icon = QPixmap('icons/done.png')
         self.loading_icon = QPixmap('icons/loading.png')
         self.error_icon = QPixmap('icons/broken.png')
@@ -47,9 +45,10 @@ class MainWindow(QWidget, Ui_Form):
             button.setGraphicsEffect(shadow)
             # button.setIcon(self.common_icon)
             circle = QPixmap('icons/circle.png')
+            # circle.scaled(119, 119)
 
             label = QLabel(button)
-            label.setPixmap(circle)
+            label.setPixmap(self.common_icon)
             label.setStyleSheet('background: transparent;')
             label.move(24, 24)
             label.setParent(button)
@@ -87,6 +86,7 @@ class MainWindow(QWidget, Ui_Form):
         # button.style().polish(button)
         # button.update()
         label = button.children()[-1]
+        button.setToolTip(state + '...')
         if state == 'loading':
             label.setPixmap(self.loading_icon)
         elif state == 'done':
@@ -100,31 +100,35 @@ class MainWindow(QWidget, Ui_Form):
         path = f'\scripts\{prname}.py'
         path = self.script_path + path
 
-        print(path)
+        logger.info(path)
 
         self.process = QProcess(self)
+        process = self.process
+        self.process.setObjectName(name)
         self.process.errorOccurred.connect(self.error)
-        self.process.finished.connect(lambda: self.done(name))
+        self.process.finished.connect(lambda: self.done(process))
         self.process.readyRead.connect(self.readout)
         self.process.start(path)
-        print('-------' + path + '--------------------------------')
-        print(self.process.state())
+        logger.info('-------' + path + '--------------------------------')
+        logger.info(self.process.state())
 
     def readout(self):
-        print(self.process.readAll())
+        logger.info(self.process.readAll())
 
-    def done(self, name):
+    def done(self, process):
+        state = process.exitCode()
+        name = process.objectName()
         name = name.upper()
-        self.is_completed = True
-        print('DONE DONE DONE', name)
-        bad = ['АРГО', 'КУРТКИ', 'ФИОРИТА']
-        if name not in bad:
+        print(state, name)
+        if state == 0:
+            logger.info(('DONE DONE DONE', name))
             self.set_state(self.find_widget_by_name(name), 'done')
         else:
+            self.error('UNKNOWN ERROR!! state is: ' + str(state))
             self.set_state(self.find_widget_by_name(name), 'error')
 
-    def error(self):
-        print('e')
+    def error(self, e):
+        logger.error(('error:', e))
 
     def find_widget_by_name(self, name):
         for button in self.buttons:

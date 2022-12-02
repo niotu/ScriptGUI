@@ -15,7 +15,8 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1440, 720)
-        Form.setStyleSheet("background: #373E43")
+        Form.setStyleSheet(
+            "background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0.051, stop:0 rgba(55, 62, 67, 255), stop:0.159091 rgba(55, 62, 67, 255), stop:0.767045 rgba(27, 56, 78, 255), stop:1 rgba(11, 36, 54, 255));")
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()

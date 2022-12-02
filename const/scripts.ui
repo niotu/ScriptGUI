@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: #373E43</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0.051, stop:0 rgba(55, 62, 67, 255), stop:0.159091 rgba(55, 62, 67, 255), stop:0.767045 rgba(27, 56, 78, 255), stop:1 rgba(11, 36, 54, 255));</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="22" column="0">

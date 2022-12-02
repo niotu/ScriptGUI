@@ -1,3 +1,6 @@
+import logging
+import os
+
 PREFIX = 'C:/Users/noitu/work/PycharmProjects/Parser/'
 
 SCRIPT_NAMES = \
@@ -76,3 +79,9 @@ NAMES_TO_SCRIPTS = \
     }
 
 OUTPUT_DIR = 'C:\\Users\\noitu\\work\\PycharmProjects\\ScriptGUI\\output\\'
+
+
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO,
+                    filename="logs/logs.log")
+logger = logging.getLogger(__name__)
