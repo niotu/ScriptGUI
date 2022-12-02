@@ -167,10 +167,10 @@ class Ui_Form(object):
         self.label.setSizePolicy(sizePolicy)
         self.label.setMinimumSize(QtCore.QSize(1030, 52))
         self.label.setStyleSheet("border-radius: 15px;\n"
-                                 "font-family: \'Inter\';\n"
+                                 "font-family: \'Roboto\';\n"
                                  "font-style: normal;\n"
-                                 "font-weight: 400;\n"
-                                 "font-size: 20px;\n"
+                                 "font-weight: 480;\n"
+                                 "font-size: 24px;\n"
                                  "background: rgba(195, 253, 31, 1.0)")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")

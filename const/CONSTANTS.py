@@ -5,8 +5,8 @@ SCRIPT_NAMES = \
         'агата', 'арго', 'эталина',
         'фиорита', 'гинда', 'жанели',
         'джети', 'куртки', 'лкрафт',
-        'сумкистиль', 'боссанова',
-        "синий лен", 'клевер-\nмедиа', 'раш'
+        'сумки\nстиль', 'босса\nнова',
+        "синий\nлен", 'клевер\nмедиа', 'раш'
     ]
 
 COMMON_STYLE = (
@@ -72,5 +72,7 @@ NAMES_TO_SCRIPTS = \
         'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janeli',
         'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
         'сумкистиль': 'sumkistyle', 'боссанова': 'bossanova',
-        "синий лен": 'siniylen', 'клевер-\nмедиа': 'clevermedia', 'раш': 'rash'
+        "синийлен": 'siniylen', 'клевермедиа': 'clevermedia', 'раш': 'rash'
     }
+
+OUTPUT_DIR = 'C:\\Users\\noitu\\work\\PycharmProjects\\ScriptGUI\\output\\'

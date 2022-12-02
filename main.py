@@ -1,8 +1,10 @@
+import os
 import sys
 
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSizePolicy
 
+from const.CONSTANTS import *
 from mainWindow import MainWindow
 
 
@@ -22,6 +24,18 @@ def main():
     sys.exit(app.exec())
 
 
+def cleanup():
+    from os import walk
+
+    fnames = []
+    for (dirpath, dirnames, filenames) in walk(OUTPUT_DIR):
+        fnames.extend(filenames)
+        break
+    for file in fnames:
+        os.remove(OUTPUT_DIR + '\\' + file)
+
+
 if __name__ == "__main__":
+    cleanup()
     print("Starting...")
     main()
