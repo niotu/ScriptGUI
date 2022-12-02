@@ -10,12 +10,15 @@
 
 from PyQt5 import QtCore, QtWidgets
 
+from const.CONSTANTS import Pic
+
 
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1440, 720)
-        Form.setStyleSheet("background: #373E43")
+        Form.setStyleSheet(
+            "background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0.051, stop:0 rgba(55, 62, 67, 255), stop:0.159091 rgba(55, 62, 67, 255), stop:0.767045 rgba(27, 56, 78, 255), stop:1 rgba(11, 36, 54, 255));")
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
@@ -158,6 +161,18 @@ class Ui_Form(object):
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_4.addItem(spacerItem15)
+        self.pushButton_16 = QtWidgets.QPushButton(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_16.sizePolicy().hasHeightForWidth())
+        self.pushButton_16.setSizePolicy(sizePolicy)
+        self.pushButton_16.setStyleSheet("background:transparent")
+        self.pushButton_16.setText("")
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.horizontalLayout_4.addWidget(self.pushButton_16)
+        spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem16)
         self.label = QtWidgets.QLabel(Form)
         self.label.setEnabled(True)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
@@ -167,21 +182,26 @@ class Ui_Form(object):
         self.label.setSizePolicy(sizePolicy)
         self.label.setMinimumSize(QtCore.QSize(1030, 52))
         self.label.setStyleSheet("border-radius: 15px;\n"
-                                 "font-family: \'Roboto\';\n"
+                                 "font-family: \'Inter\';\n"
                                  "font-style: normal;\n"
-                                 "font-weight: 480;\n"
-                                 "font-size: 24px;\n"
+                                 "font-weight: 400;\n"
+                                 "font-size: 20px;\n"
                                  "background: rgba(195, 253, 31, 1.0)")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.horizontalLayout_4.addWidget(self.label)
-        spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem16)
+        spacerItem17 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem17)
+        spacerItem18 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem18)
+        self.label_2 = Pic(Form)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_4.addWidget(self.label_2)
         self.gridLayout.addLayout(self.horizontalLayout_4, 14, 0, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem17 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem17)
+        spacerItem19 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem19)
         self.pushButton_6 = QtWidgets.QPushButton(Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -192,8 +212,8 @@ class Ui_Form(object):
         self.pushButton_6.setText("")
         self.pushButton_6.setObjectName("pushButton_6")
         self.horizontalLayout_2.addWidget(self.pushButton_6)
-        spacerItem18 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem18)
+        spacerItem20 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem20)
         self.pushButton_7 = QtWidgets.QPushButton(Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -204,8 +224,8 @@ class Ui_Form(object):
         self.pushButton_7.setText("")
         self.pushButton_7.setObjectName("pushButton_7")
         self.horizontalLayout_2.addWidget(self.pushButton_7)
-        spacerItem19 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem19)
+        spacerItem21 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem21)
         self.pushButton_8 = QtWidgets.QPushButton(Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -216,8 +236,8 @@ class Ui_Form(object):
         self.pushButton_8.setText("")
         self.pushButton_8.setObjectName("pushButton_8")
         self.horizontalLayout_2.addWidget(self.pushButton_8)
-        spacerItem20 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem20)
+        spacerItem22 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem22)
         self.pushButton_9 = QtWidgets.QPushButton(Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -228,8 +248,8 @@ class Ui_Form(object):
         self.pushButton_9.setText("")
         self.pushButton_9.setObjectName("pushButton_9")
         self.horizontalLayout_2.addWidget(self.pushButton_9)
-        spacerItem21 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem21)
+        spacerItem23 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem23)
         self.pushButton_10 = QtWidgets.QPushButton(Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -240,11 +260,11 @@ class Ui_Form(object):
         self.pushButton_10.setText("")
         self.pushButton_10.setObjectName("pushButton_10")
         self.horizontalLayout_2.addWidget(self.pushButton_10)
-        spacerItem22 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem22)
+        spacerItem24 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem24)
         self.gridLayout.addLayout(self.horizontalLayout_2, 18, 0, 1, 1)
-        spacerItem23 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem23, 23, 0, 1, 1)
+        spacerItem25 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem25, 23, 0, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -253,3 +273,4 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "Выберите скрипты для запуска:"))
+        self.label_2.setText(_translate("Form", "TextLabel"))

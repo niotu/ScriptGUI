@@ -1,4 +1,8 @@
-PREFIX = 'C:/Users/noitu/work/PycharmProjects/Parser/'
+import logging
+
+from PyQt5 import QtWidgets
+from PyQt5.QtCore import pyqtSignal
+from PyQt5 import QtGui
 
 SCRIPT_NAMES = \
     [
@@ -76,3 +80,48 @@ NAMES_TO_SCRIPTS = \
     }
 
 OUTPUT_DIR = 'C:\\Users\\noitu\\work\\PycharmProjects\\ScriptGUI\\output\\'
+
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO,
+                    filename="logs/logs.log")
+logger = logging.getLogger(__name__)
+
+MENU_STYLE = (
+    'QMenu{'
+    'position: absolute;'
+    'width: 168px;'
+    'height: 70px;'
+
+    'background: #DAF296;'
+
+    'border-radius: 15px;'
+    # 'border: 3px solid #000000;'
+    'font-family: "Inter";'
+    'font-style: normal;'
+    'font-weight: 400;'
+    'font-size: 14px;'
+    '}'
+    'QMenu::item{'
+    'padding-left: 25px;'
+
+    'width: 140px;'
+    'height: 30px;'
+
+    'border: 2px solid #000000;'
+    'border-radius: 15px;'
+    'background: #C3FD1F;'
+    '}'
+    'QMenu::item:hover{'
+    'background: #86B405;'
+    '}'
+)
+
+class Pic(QtWidgets.QLabel):
+    click = pyqtSignal()
+
+    def __init__(self, parent):
+        super().__init__(parent)
+
+    def mousePressEvent(self, ev: QtGui.QMouseEvent) -> None:
+        super().mousePressEvent(ev)
+        self.click.emit()
