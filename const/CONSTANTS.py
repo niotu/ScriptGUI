@@ -1,8 +1,8 @@
 import logging
 
+from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import pyqtSignal
-from PyQt5 import QtGui
 
 SCRIPT_NAMES = \
     [
@@ -79,7 +79,7 @@ NAMES_TO_SCRIPTS = \
         "синийлен": 'siniylen', 'клевермедиа': 'clevermedia', 'раш': 'rash'
     }
 
-OUTPUT_DIR = 'C:\\Users\\noitu\\work\\PycharmProjects\\ScriptGUI\\output\\'
+OUTPUT_DIR = 'C:/Users/noitu/work/PycharmProjects/ScriptGUI/output/'
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO,
@@ -115,6 +115,7 @@ MENU_STYLE = (
     'background: #86B405;'
     '}'
 )
+
 
 class Pic(QtWidgets.QLabel):
     click = pyqtSignal()

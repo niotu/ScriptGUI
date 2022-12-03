@@ -106,7 +106,7 @@ class MainWindow(QWidget, Ui_Form):
     def start_script(self, name):
         prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
 
-        path = f'\scripts\{prname}.py'
+        path = f'/scripts/{prname}.py'
         path = self.script_path + path
 
         self.process = QProcess(self)
@@ -125,10 +125,10 @@ class MainWindow(QWidget, Ui_Form):
         state = process.exitCode()
         name = process.objectName()
         name = name.upper()
-        logger.info((state, name))
+        logger.info((state, name.replace('\n', ' ')))
         widget = self.find_widget_by_name(name)
         if state == 0:
-            logger.info(('DONE DONE DONE', name))
+            logger.info(('DONE DONE DONE', name.replace('\n', ' ')))
             self.set_state(widget, 'done')
         else:
             self.error('UNKNOWN ERROR!! state is: ' + str(state))
