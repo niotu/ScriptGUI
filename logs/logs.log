@@ -1,42 +1,42 @@
-2022-12-03 22:58:38,697 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
-2022-12-03 22:58:38,697 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,698 - const.CONSTANTS - INFO - -------agata--------------------------------
-2022-12-03 22:58:38,699 - const.CONSTANTS - INFO - (0, '¿–√Œ')
-2022-12-03 22:58:38,699 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,700 - const.CONSTANTS - INFO - -------argo--------------------------------
-2022-12-03 22:58:38,701 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
-2022-12-03 22:58:38,701 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,701 - const.CONSTANTS - INFO - -------etalina--------------------------------
-2022-12-03 22:58:38,703 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
-2022-12-03 22:58:38,703 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,703 - const.CONSTANTS - INFO - -------fiorita--------------------------------
-2022-12-03 22:58:38,704 - const.CONSTANTS - INFO - (0, '√»Õƒ¿')
-2022-12-03 22:58:38,705 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,705 - const.CONSTANTS - INFO - -------guinda--------------------------------
-2022-12-03 22:58:38,706 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
-2022-12-03 22:58:38,706 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,707 - const.CONSTANTS - INFO - -------janelli--------------------------------
-2022-12-03 22:58:38,708 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
-2022-12-03 22:58:38,708 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,709 - const.CONSTANTS - INFO - -------jetty--------------------------------
-2022-12-03 22:58:38,710 - const.CONSTANTS - INFO - (0, ' ”–“ »')
-2022-12-03 22:58:38,710 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,710 - const.CONSTANTS - INFO - -------kurtki--------------------------------
-2022-12-03 22:58:38,711 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
-2022-12-03 22:58:38,711 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,712 - const.CONSTANTS - INFO - -------lcraft--------------------------------
-2022-12-03 22:58:38,712 - const.CONSTANTS - INFO - (0, '—”Ã » —“»À‹')
-2022-12-03 22:58:38,712 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,713 - const.CONSTANTS - INFO - -------sumki-style--------------------------------
-2022-12-03 22:58:38,714 - const.CONSTANTS - INFO - (0, '¡Œ——¿ ÕŒ¬¿')
-2022-12-03 22:58:38,714 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,714 - const.CONSTANTS - INFO - -------triko--------------------------------
-2022-12-03 22:58:38,715 - const.CONSTANTS - INFO - (0, '—»Õ»… À≈Õ')
-2022-12-03 22:58:38,715 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,715 - const.CONSTANTS - INFO - -------/home/vint/workspace/siniylen.ru/siniylen.py--------------------------------
-2022-12-03 22:58:38,716 - const.CONSTANTS - INFO - (0, ' À≈¬≈– Ã≈ƒ»¿')
-2022-12-03 22:58:38,716 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,716 - const.CONSTANTS - INFO - -------/home/vint/workspace/clever-media/clever-media.py--------------------------------
-2022-12-03 22:58:38,716 - const.CONSTANTS - INFO - (0, '–¿ÿ')
-2022-12-03 22:58:38,716 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
-2022-12-03 22:58:38,717 - const.CONSTANTS - INFO - -------/home/vint/workspace/rash.su/rashParser.py--------------------------------
+2022-12-03 22:59:42,143 - const.CONSTANTS - INFO - (0, '¿√¿“¿')
+2022-12-03 22:59:42,144 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,144 - const.CONSTANTS - INFO - -------agata--------------------------------
+2022-12-03 22:59:42,146 - const.CONSTANTS - INFO - (0, '¿–√Œ')
+2022-12-03 22:59:42,146 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,146 - const.CONSTANTS - INFO - -------argo--------------------------------
+2022-12-03 22:59:42,148 - const.CONSTANTS - INFO - (0, '›“¿À»Õ¿')
+2022-12-03 22:59:42,148 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,148 - const.CONSTANTS - INFO - -------etalina--------------------------------
+2022-12-03 22:59:42,149 - const.CONSTANTS - INFO - (0, '‘»Œ–»“¿')
+2022-12-03 22:59:42,150 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,150 - const.CONSTANTS - INFO - -------fiorita--------------------------------
+2022-12-03 22:59:42,151 - const.CONSTANTS - INFO - (0, '√»Õƒ¿')
+2022-12-03 22:59:42,151 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,152 - const.CONSTANTS - INFO - -------guinda--------------------------------
+2022-12-03 22:59:42,153 - const.CONSTANTS - INFO - (0, '∆¿Õ≈À»')
+2022-12-03 22:59:42,153 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,153 - const.CONSTANTS - INFO - -------janelli--------------------------------
+2022-12-03 22:59:42,155 - const.CONSTANTS - INFO - (0, 'ƒ∆≈“»')
+2022-12-03 22:59:42,155 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,155 - const.CONSTANTS - INFO - -------jetty--------------------------------
+2022-12-03 22:59:42,157 - const.CONSTANTS - INFO - (0, ' ”–“ »')
+2022-12-03 22:59:42,157 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,157 - const.CONSTANTS - INFO - -------kurtki--------------------------------
+2022-12-03 22:59:42,158 - const.CONSTANTS - INFO - (0, 'À –¿‘“')
+2022-12-03 22:59:42,158 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,159 - const.CONSTANTS - INFO - -------lcraft--------------------------------
+2022-12-03 22:59:42,160 - const.CONSTANTS - INFO - (0, '—”Ã » —“»À‹')
+2022-12-03 22:59:42,160 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,160 - const.CONSTANTS - INFO - -------sumki-style--------------------------------
+2022-12-03 22:59:42,161 - const.CONSTANTS - INFO - (0, '¡Œ——¿ ÕŒ¬¿')
+2022-12-03 22:59:42,161 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,162 - const.CONSTANTS - INFO - -------triko--------------------------------
+2022-12-03 22:59:42,162 - const.CONSTANTS - INFO - (0, '—»Õ»… À≈Õ')
+2022-12-03 22:59:42,162 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,163 - const.CONSTANTS - INFO - -------/home/vint/workspace/siniylen.ru/siniylen.py--------------------------------
+2022-12-03 22:59:42,163 - const.CONSTANTS - INFO - (0, ' À≈¬≈– Ã≈ƒ»¿')
+2022-12-03 22:59:42,163 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,163 - const.CONSTANTS - INFO - -------/home/vint/workspace/clever-media/clever-media.py--------------------------------
+2022-12-03 22:59:42,164 - const.CONSTANTS - INFO - (0, '–¿ÿ')
+2022-12-03 22:59:42,164 - const.CONSTANTS - ERROR - ('error:', 'UNKNOWN ERROR!! state is: 0')
+2022-12-03 22:59:42,164 - const.CONSTANTS - INFO - -------/home/vint/workspace/rash.su/rashParser.py--------------------------------
