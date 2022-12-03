@@ -1,11 +1,9 @@
-import os
 import sys
 
 from PyQt5 import QtCore
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSizePolicy
 
-from const.CONSTANTS import *
 from mainWindow import MainWindow
 
 
@@ -27,16 +25,14 @@ def main():
 
 
 def cleanup():
-    from os import walk, truncate
-
+    from os import truncate
     # fnames = []
     # for (dirpath, dirnames, filenames) in walk(OUTPUT_DIR):
     #     fnames.extend(filenames)
     #     break
     # for file in fnames:
     #     os.remove(OUTPUT_DIR + '/' + file)
-    #
-    truncate('logs/logs.log', 0)
+    # truncate('logs/errors_QT_logs.log', 0)
 
 
 if __name__ == "__main__":

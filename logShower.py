@@ -9,4 +9,3 @@ class LogShower(QWidget, Ui_Form):
 
         self.setupUi(self)
         self.setWindowTitle("Logs")
-

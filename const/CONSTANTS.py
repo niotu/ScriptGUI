@@ -1,5 +1,3 @@
-import logging
-
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import pyqtSignal
@@ -81,12 +79,15 @@ NAMES_TO_SCRIPTS = \
         'раш': '/home/vint/workspace/rash.su/rashParser.py'
     }
 
-OUTPUT_DIR = 'output/'
+SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
+           'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
+           'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
+           'сумкистиль': 'sumki-style', 'боссанова': 'triko',
+           "синийлен": 'siniylen',
+           'клевермедиа': 'clever-media',
+           'раш': 'rash'}
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO,
-                    filename="logs/logs.log")
-logger = logging.getLogger(__name__)
+OUTPUT_DIR = 'output/'
 
 MENU_STYLE = (
     'QMenu{'
@@ -128,3 +129,22 @@ class Pic(QtWidgets.QLabel):
     def mousePressEvent(self, ev: QtGui.QMouseEvent) -> None:
         super().mousePressEvent(ev)
         self.click.emit()
+
+
+class Logger:
+    def __init__(self):
+        pass
+
+    def write(self, name, info):
+        filepath = f'logs/{name}_logs.log'
+        with open(filepath, 'w') as f:
+            f.write(info)
+
+    def read(self, name):
+        filepath = f'logs/{name}_logs.log'
+        with open(filepath, 'w') as f:
+            lines = f.readlines()[-100]
+        return lines
+
+
+logger = Logger()

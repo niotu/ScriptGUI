@@ -1,3 +1,6 @@
-import os
+from const.CONSTANTS import *
 
-os.truncate('logs/logs.log', 0)
+for name in NAMES_TO_SCRIPTS.values():
+    name = name.replace('\n', '')
+    with open(f'logs/{name}_logs.log', 'w') as fh:
+        fh.write('')

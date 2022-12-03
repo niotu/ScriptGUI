@@ -1,8 +1,6 @@
-import os
-
 from PyQt5.QtCore import QProcess
 from PyQt5.QtGui import QColor, QPixmap, QTextCursor
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu, QPushButton
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -81,11 +79,6 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_13.clicked.connect(lambda: self.start_current(self.pushButton_13))
         self.pushButton_14.clicked.connect(lambda: self.start_current(self.pushButton_14))
 
-        # osath = os.path.join(os.path.dirname(__file__))
-        osath = ''
-        self.script_path = '' + osath
-        print(self.script_path)
-
     def start_all(self):
         for button in self.buttons:
             self.start_current(button)
@@ -108,67 +101,65 @@ class MainWindow(QWidget, Ui_Form):
 
     def start_script(self, name):
         prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
-
-        # path = f'scripts/{prname}.py'
+        logname = SPECIAL[name.lower().replace('\n', '')]
         path = prname
-        # path = self.script_path + path
 
         self.process = QProcess(self)
         process = self.process
         if prname[0] == '/':
-            self.process.setWorkingDirectory('/'+'/'.join(prname.split('/')[:-1]))
+            self.process.setWorkingDirectory('/' + '/'.join(prname.split('/')[:-1]))
         self.process.setObjectName(name)
         self.process.errorOccurred.connect(lambda: self.done(process, True))
         self.process.finished.connect(lambda: self.done(process))
         self.process.readyRead.connect(self.readout)
         self.process.start(path)
-        print(path)
-        logger.info('-------' + path + '--------------------------------')
+        # print(path)?
+        logger.write(logname, '-------' + path + '--------------------------------')
 
     def readout(self):
-        logger.info(self.process.readAll())
+        name = self.process.objectName()
+        logname = SPECIAL[name.lower().replace('\n', '')]
+        info = self.process.readAll()
+        print(info)
+        logger.write(logname, info)
 
     def done(self, process, is_error=False):
         state = process.exitCode()
         print(state)
         name = process.objectName()
+        logname = SPECIAL[name.lower().replace('\n', '')]
         name = name.upper()
-        logger.info((state, name.replace('\n', ' ')))
+        logger.write(logname, str(str(state) + '--' + name.replace('\n', ' ')))
         widget = self.find_widget_by_name(name)
         if state == 0 and not is_error:
-            logger.info(('DONE DONE DONE', name.replace('\n', ' ')))
+            logger.write(logname, str('DONE DONE DONE ' + name.replace('\n', ' ')))
             self.set_state(widget, 'done')
         else:
             self.error('UNKNOWN ERROR!! state is: ' + str(state))
             self.menu = QMenu()
             self.menu.addAction('Show logs', self.show_logs)
-            # self.menu.set
             self.menu.addAction('Restart', lambda: self.start_current(widget))
             self.menu.setAutoFillBackground(True)
             self.menu.setStyleSheet(MENU_STYLE)
             widget.setMenu(self.menu)
             self.set_state(widget, 'error')
 
-    def show_logs(self):
+    def show_logs(self, name):
         self.log_window = LogShower()
-        with open('logs/logs.log', 'r') as log:
-            lines = log.readlines()[-100:]
-        self.log_window.plainTextEdit.setPlainText('\n'.join(lines))
+
+        lines = logger.read(name)
+
+        self.log_window.plainTextEdit.setPlainText(''.join(lines))
         self.log_window.plainTextEdit.moveCursor(QTextCursor.End)
         self.log_window.show()
 
     def error(self, e):
-        logger.error(('error:', e))
+        logger.write('errors_QT', 'error:' + e)
 
     def find_widget_by_name(self, name):
         for button in self.buttons:
             if button.text() == name:
                 return button
-
-    def show_helper(self, widget):
-        box = QMessageBox()
-        box.addButton()
-        print(1)
 
     def startAnimation(self):
         pass
