@@ -81,7 +81,10 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_13.clicked.connect(lambda: self.start_current(self.pushButton_13))
         self.pushButton_14.clicked.connect(lambda: self.start_current(self.pushButton_14))
 
-        self.script_path = 'python ' + os.path.join(os.path.dirname(__file__))
+        # osath = os.path.join(os.path.dirname(__file__))
+        osath = ''
+        self.script_path = '' + osath
+        print(self.script_path)
 
     def start_all(self):
         for button in self.buttons:
@@ -106,28 +109,33 @@ class MainWindow(QWidget, Ui_Form):
     def start_script(self, name):
         prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
 
-        path = f'/scripts/{prname}.py'
-        path = self.script_path + path
+        # path = f'scripts/{prname}.py'
+        path = prname
+        # path = self.script_path + path
 
         self.process = QProcess(self)
         process = self.process
+        if prname[0] == '/':
+            self.process.setWorkingDirectory('/'+'/'.join(prname.split('/')[:-1]))
         self.process.setObjectName(name)
-        self.process.errorOccurred.connect(self.error)
+        self.process.errorOccurred.connect(lambda: self.done(process, True))
         self.process.finished.connect(lambda: self.done(process))
         self.process.readyRead.connect(self.readout)
         self.process.start(path)
+        print(path)
         logger.info('-------' + path + '--------------------------------')
 
     def readout(self):
         logger.info(self.process.readAll())
 
-    def done(self, process):
+    def done(self, process, is_error=False):
         state = process.exitCode()
+        print(state)
         name = process.objectName()
         name = name.upper()
         logger.info((state, name.replace('\n', ' ')))
         widget = self.find_widget_by_name(name)
-        if state == 0:
+        if state == 0 and not is_error:
             logger.info(('DONE DONE DONE', name.replace('\n', ' ')))
             self.set_state(widget, 'done')
         else:

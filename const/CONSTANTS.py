@@ -73,13 +73,15 @@ QPushButton:pressed{
 NAMES_TO_SCRIPTS = \
     {
         'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
-        'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janeli',
+        'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
         'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
-        'сумкистиль': 'sumkistyle', 'боссанова': 'bossanova',
-        "синийлен": 'siniylen', 'клевермедиа': 'clevermedia', 'раш': 'rash'
+        'сумкистиль': 'sumki-style', 'боссанова': 'triko',
+        "синийлен": '/home/vint/workspace/siniylen.ru/siniylen.py',
+        'клевермедиа': '/home/vint/workspace/clever-media/clever-media.py',
+        'раш': '/home/vint/workspace/rash.su/rashParser.py'
     }
 
-OUTPUT_DIR = 'C:/Users/noitu/work/PycharmProjects/ScriptGUI/output/'
+OUTPUT_DIR = 'output/'
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO,
