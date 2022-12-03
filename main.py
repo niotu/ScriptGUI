@@ -25,13 +25,16 @@ def main():
 
 
 def cleanup():
-    from os import truncate
-    # fnames = []
-    # for (dirpath, dirnames, filenames) in walk(OUTPUT_DIR):
-    #     fnames.extend(filenames)
-    #     break
-    # for file in fnames:
-    #     os.remove(OUTPUT_DIR + '/' + file)
+    from os import walk
+    fnames = []
+    for (dirpath, dirnames, filenames) in walk('logs'):
+        fnames.extend(filenames)
+        break
+
+    for f in fnames:
+        with open('logs/'+f, 'w') as f:
+            f.writelines(['--\n']*10)
+        # os.remove(OUTPUT_DIR + '/' + file)
     # truncate('logs/errors_QT_logs.log', 0)
 
 

@@ -1,3 +1,5 @@
+import io
+
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import pyqtSignal
@@ -142,8 +144,11 @@ class Logger:
 
     def read(self, name):
         filepath = f'logs/{name}_logs.log'
-        with open(filepath, 'w') as f:
-            lines = f.readlines()[-100]
+        with open(filepath, 'r') as f:
+            try:
+                lines = f.readlines()
+            except io.UnsupportedOperation:
+                lines = f.readlines()
         return lines
 
 

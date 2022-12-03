@@ -114,7 +114,7 @@ class MainWindow(QWidget, Ui_Form):
         self.process.readyRead.connect(self.readout)
         self.process.start(path)
         # print(path)?
-        logger.write(logname, '-------' + path + '--------------------------------')
+        logger.write(logname, 'START -------' + path + '--------------------------------')
 
     def readout(self):
         name = self.process.objectName()
@@ -137,7 +137,7 @@ class MainWindow(QWidget, Ui_Form):
         else:
             self.error('UNKNOWN ERROR!! state is: ' + str(state))
             self.menu = QMenu()
-            self.menu.addAction('Show logs', self.show_logs)
+            self.menu.addAction('Show logs', lambda: self.show_logs(logname))
             self.menu.addAction('Restart', lambda: self.start_current(widget))
             self.menu.setAutoFillBackground(True)
             self.menu.setStyleSheet(MENU_STYLE)
