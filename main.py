@@ -32,10 +32,9 @@ def cleanup():
         break
 
     for f in fnames:
-        with open('logs/'+f, 'w') as f:
-            f.writelines(['--\n']*10)
-        # os.remove(OUTPUT_DIR + '/' + file)
-    # truncate('logs/errors_QT_logs.log', 0)
+        if f != 'errors_QT_logs.log':
+            with open('logs/'+f, 'w') as f:
+                f.truncate(0)
 
 
 if __name__ == "__main__":

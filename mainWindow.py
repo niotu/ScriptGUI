@@ -7,6 +7,10 @@ from const.page import Ui_Form
 from logShower import LogShower
 
 
+class Task:
+    pass
+
+
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -79,6 +83,8 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_13.clicked.connect(lambda: self.start_current(self.pushButton_13))
         self.pushButton_14.clicked.connect(lambda: self.start_current(self.pushButton_14))
 
+        self.tasks = []
+
     def start_all(self):
         for button in self.buttons:
             self.start_current(button)
@@ -104,24 +110,38 @@ class MainWindow(QWidget, Ui_Form):
         logname = SPECIAL[name.lower().replace('\n', '')]
         path = prname
 
-        self.process = QProcess(self)
-        process = self.process
-        if prname[0] == '/':
-            self.process.setWorkingDirectory('/' + '/'.join(prname.split('/')[:-1]))
-        self.process.setObjectName(name)
-        self.process.errorOccurred.connect(lambda: self.done(process, True))
-        self.process.finished.connect(lambda: self.done(process))
-        self.process.readyRead.connect(self.readout)
-        self.process.start(path)
-        # print(path)?
-        logger.write(logname, 'START -------' + path + '--------------------------------')
+        task = Task()
+        self.tasks.append(task)
 
-    def readout(self):
-        name = self.process.objectName()
+        process = QProcess(self)
+        task.process = process
+
+        if prname[0] == '/':
+            process.setWorkingDirectory('/' + '/'.join(prname.split('/')[:-1]))
+        process.setObjectName(name)
+        process.errorOccurred.connect(lambda: self.done(process, True))
+        process.finished.connect(lambda: self.done(process))
+        process.readyRead.connect(lambda: self.readout(process))
+        process.readyReadStandardError.connect(lambda: self.readerror(process))
+        process.start(path)
+        # print(path)?
+        # logger.write(logname, path)
+
+    def readout(self, process):
+        name = process.objectName()
         logname = SPECIAL[name.lower().replace('\n', '')]
-        info = self.process.readAll()
-        print(info)
+        info = process.readAll()
+        if not info:
+            return
+        print(name, info)
         logger.write(logname, info)
+
+    def readerror(self, process):
+        name = process.objectName()
+        logname = SPECIAL[name.lower().replace('\n', '')]
+
+        err = process.readAllStandardError()
+        logger.write(logname, err)
 
     def done(self, process, is_error=False):
         state = process.exitCode()
@@ -129,10 +149,11 @@ class MainWindow(QWidget, Ui_Form):
         name = process.objectName()
         logname = SPECIAL[name.lower().replace('\n', '')]
         name = name.upper()
-        logger.write(logname, str(str(state) + '--' + name.replace('\n', ' ')))
+        logger.write(logname, process.readAll())
+        # logger.write(logname, str(str(state) + '--' + name.replace('\n', ' ')))
         widget = self.find_widget_by_name(name)
         if state == 0 and not is_error:
-            logger.write(logname, str('DONE DONE DONE ' + name.replace('\n', ' ')))
+            # logger.write(logname, str('DONE DONE DONE ' + name.replace('\n', ' ')))
             self.set_state(widget, 'done')
         else:
             self.error('UNKNOWN ERROR!! state is: ' + str(state))
@@ -149,12 +170,12 @@ class MainWindow(QWidget, Ui_Form):
 
         lines = logger.read(name)
 
-        self.log_window.plainTextEdit.setPlainText(''.join(lines))
+        self.log_window.plainTextEdit.setPlainText(' '.join(lines))
         self.log_window.plainTextEdit.moveCursor(QTextCursor.End)
         self.log_window.show()
 
     def error(self, e):
-        logger.write('errors_QT', 'error:' + e)
+        logger.write('errors_QT', str('error:' + e))
 
     def find_widget_by_name(self, name):
         for button in self.buttons:

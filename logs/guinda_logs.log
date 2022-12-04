@@ -1,1 +1,82 @@
-START -------guinda--------------------------------
+login
+login response: Приветствуем Вас, Евгения! <br>Вы успешно авторизованы.<div id="yes_result"></div>
+catalog urls: ['/novinki.html', '/rasprodazha.html', '/bluzki.html', '/bluzki_bodi.html', '/bombery.html', '/bryuki.html', '/vodolazki.html', '/dzhempera.html', '/zhakety.html', '/zhilety.html', '/kardigany_1.html', '/platya.html', '/rubashki.html', '/topy.html', '/tuniki.html', '/yubki.html', '/aksessuary.html', '/osen_zima.html', '/vesna_leto.html']
+
+*** do catalog: https://guinda.ru/novinki.html
+good urls: 
+ ['/bluzki/02_1223_bluza.html', '/bluzki/02_1223_bluza.html', '/bluzki/02_1237_bluza.html', '/bluzki/02_1237_bluza.html', '/bluzki/02_1196_bluza.html', '/bluzki/02_1196_bluza.html', '/novinki/08_273_yubka.html', '/novinki/08_273_yubka.html', '/bluzki/02_1263_bluza.html', '/bluzki/02_1263_bluza.html', '/bluzki/02_1222_bluza.html', '/bluzki/02_1222_bluza.html', '/bluzki/02_1192_bluza.html', '/bluzki/02_1192_bluza.html', '/dzhempera/06_830_dzhemper.html', '/dzhempera/06_830_dzhemper.html', '/dzhempera/06_829_dzhemper.html', '/dzhempera/06_829_dzhemper.html', '/dzhempera/06_831_dzhemper.html', '/dzhempera/06_831_dzhemper.html', '/vodolazki/01_140_vodolazka.html', '/vodolazki/01_140_vodolazka.html', '/bluzki/02_1252_bluza.html', '/bluzki/02_1252_bluza.html', '/bluzki/02_1235_bluza.html', '/bluzki/02_1235_bluza.html', '/bluzki/02_1236_bluza.html', '/bluzki/02_1236_bluza.html', '/bluzki/02_1211_bluza.html', '/bluzki/02_1211_bluza.html', '/bluzki/02_1194_bluza.html', '/bluzki/02_1194_bluza.html', '/bluzki/02_1247_bluza.html', '/bluzki/02_1247_bluza.html', '/bluzki/02_1212_bluza.html', '/bluzki/02_1212_bluza.html', '/dzhempera/06_827_dzhemper.html', '/dzhempera/06_827_dzhemper.html', '/zhakety/16_208_zhaket.html', '/zhakety/16_208_zhaket.html', '/bluzki/02_1210_bluza.html', '/bluzki/02_1210_bluza.html', '/dzhempera/06_822_dzhemper.html', '/dzhempera/06_822_dzhemper.html', '/dzhempera/06_820_dzhemper.html', '/dzhempera/06_820_dzhemper.html', '/dzhempera/06_807_dzhemper.html', '/dzhempera/06_807_dzhemper.html', '/dzhempera/06_825_dzhemper.html', '/dzhempera/06_825_dzhemper.html', '/dzhempera/06_808_dzhemper.html', '/dzhempera/06_808_dzhemper.html', '/vesna_leto/08_261_yubka.html', '/vesna_leto/08_261_yubka.html', '/dzhempera/06_818_dzhemper.html', '/dzhempera/06_818_dzhemper.html', '/dzhempera/06_824_dzhemper.html', '/dzhempera/06_824_dzhemper.html', '/dzhempera/06_813_dzhemper.html', '/dzhempera/06_813_dzhemper.html', '/bluzki/02_1251_bluza.html', '/bluzki/02_1251_bluza.html', '/dzhempera/06_823_dzhemper.html', '/dzhempera/06_823_dzhemper.html', '/dzhempera/06_816_dzhemper.html', '/dzhempera/06_816_dzhemper.html', '/dzhempera/06_815_dzhemper.html', '/dzhempera/06_815_dzhemper.html', '/dzhempera/06_814_dzhemper.html', '/dzhempera/06_814_dzhemper.html', '/bluzki/02_1268_bluza.html', '/bluzki/02_1268_bluza.html', '/bluzki/02_1267_bluza.html', '/bluzki/02_1267_bluza.html', '/bluzki/02_1265_bluza.html', '/bluzki/02_1265_bluza.html', '/dzhempera/06_812_dzhemper.html', '/dzhempera/06_812_dzhemper.html', '/dzhempera/06_803_dzhemper.html', '/dzhempera/06_803_dzhemper.html', '/dzhempera/06_804_dzhemper.html', '/dzhempera/06_804_dzhemper.html', '/bluzki/02_1260_bluza.html', '/bluzki/02_1260_bluza.html', '/dzhempera/06_811_dzhemper.html', '/dzhempera/06_811_dzhemper.html', '/bluzki/02_1245_bluza.html', '/bluzki/02_1245_bluza.html', '/vesna_leto/07_312_top.html', '/vesna_leto/07_312_top.html', '/vesna_leto/07_303_top.html', '/vesna_leto/07_303_top.html', '/vesna_leto/07_311_top.html', '/vesna_leto/07_311_top.html', '/vesna_leto/07_308_top.html', '/vesna_leto/07_308_top.html', '/vesna_leto/07_307_top.html', '/vesna_leto/07_307_top.html', '/bluzki/02_1257_bluza.html', '/bluzki/02_1257_bluza.html', '/bluzki/02_1256_bluza.html', '/bluzki/02_1256_bluza.html', '/zhakety/16_203_zhaket.html', '/zhakety/16_203_zhaket.html']
+
+*** do good: https://guinda.ru/bluzki/02_1223_bluza.html
+name: 02-1223 Блуза
+art: 02-1223
+sostav: ['20% хлопок, 80% полиэстер']
+sostav: 20% хлопок, 80% полиэстер
+price: ['1280.00']
+price: 1280.00
+imgurls: ['/upload/resize_cache/iblock/d3b/750_1000_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee0-4a04-11ed-981b-2c4d545a0c35.resize2.jpg', '/upload/resize_cache/iblock/d11/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee1-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/c27/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee2-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/ca0/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee3-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/977/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee4-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/d30/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee5-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/a7d/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee6-4a04-11ed-981b-2c4d545a0c35.resize1.jpg', '/upload/resize_cache/iblock/0e2/800_1200_16a9cdfeb475445909b854c588a1af844/fddbd55e-f6c1-11ec-980f-2c4d545a0c35_0061bee7-4a04-11ed-981b-2c4d545a0c35.resize1.jpg']
+sizes: ['42', '44', '46', '48', '50', '52']
+c:  [
+c:    { 'color' : 'голубой',
+  col: голубой
+c:                     'cells' : [{
+c:                           'Qty' : 0,
+c:                           'RestStock' : 0,
+  a: 0
+c:                           'ID': 316010,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             {
+c:                           'Qty' : 0,
+c:                           'RestStock' : 5,
+  a: 5
+   actsizes: 44
+c:                           'ID': 316011,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             {
+c:                           'Qty' : 0,
+c:                           'RestStock' : 5,
+  a: 5
+   actsizes: 44:46
+c:                           'ID': 316012,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             {
+c:                           'Qty' : 0,
+c:                           'RestStock' : 5,
+  a: 5
+   actsizes: 44:46:48
+c:                           'ID': 316013,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             {
+c:                           'Qty' : 0,
+c:                           'RestStock' : 12,
+  a: 12
+   actsizes: 44:46:48:50
+c:                           'ID': 316014,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             {
+c:                           'Qty' : 0,
+c:                           'RestStock' : 7,
+  a: 7
+   actsizes: 44:46:48:50:52
+c:                           'ID': 316015,
+c:                           'AlrdyBskt' : 0
+c:                            },
+c:                             ]},         ];
+c: 
+c: 
+
+*** do good: https://guinda.ru/bluzki/02_1223_bluza.html
+this good already done -> skip
+
+*** do good: https://guinda.ru/bluzki/02_1237_bluza.html
+name: 02-1237 Блуза
+art: 02-1237
+sostav: ['100% вискоза']
+sostav: 100% вискоза
+price: ['1260.00']
+price: 1260.00
+imgurls: 

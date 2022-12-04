@@ -122,24 +122,17 @@ MENU_STYLE = (
 )
 
 
-class Pic(QtWidgets.QLabel):
-    click = pyqtSignal()
-
-    def __init__(self, parent):
-        super().__init__(parent)
-
-    def mousePressEvent(self, ev: QtGui.QMouseEvent) -> None:
-        super().mousePressEvent(ev)
-        self.click.emit()
-
-
 class Logger:
     def __init__(self):
         pass
 
     def write(self, name, info):
+        mode = 'ab'
+        if name == 'errors_QT':
+            mode = 'a'
+            info += '\n'
         filepath = f'logs/{name}_logs.log'
-        with open(filepath, 'w') as f:
+        with open(filepath, mode) as f:
             f.write(info)
 
     def read(self, name):

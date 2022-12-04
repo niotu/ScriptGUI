@@ -1,1 +1,11 @@
-START -------/home/vint/workspace/clever-media/clever-media.py--------------------------------
+url: https://www.clever-media.ru
+url: https://www.clever-media.ru/books
+url: https://www.clever-media.ru/books/?PAGEN_1=2
+Traceback (most recent call last):
+  File "/home/vint/workspace/clever-media/clever-media.py", line 107, in <module>
+    clev.grab("clever-media.csv")
+  File "/home/vint/workspace/clever-media/clever-media.py", line 51, in grab
+    pg = self.next_page()
+  File "/home/vint/workspace/clever-media/clever-media.py", line 39, in next_page
+    actpg = self._cur_page_doc.xpath(
+IndexError: list index out of range

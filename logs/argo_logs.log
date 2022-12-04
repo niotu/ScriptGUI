@@ -1,1 +1,82 @@
-START -------argo--------------------------------
+* login...
+* login reply: {"success":true,"errors":false,"popup":false}
+* login ok
+* get catalog https://argoclassic.ru/account
+* get url: [https://argoclassic.ru/account]
+* catdoc: ['/catalog/zhenshhini', '/catalog/muzhchini', '/catalog/razmer-plus', '/bele', '/catalog/detskoe', '/catalog/aksessuari', '/skidki', '/novinki']
+
+* catalog: /catalog/zhenshhini
+* get url: [https://argoclassic.ru/catalog/zhenshhini]
+* caturls: ['/catalog/zhenshhini/novinki', '/catalog/zhenshhini/topi-futbolki', '/catalog/zhenshhini/kurtki', '/catalog/zhenshhini/kombinezoni', '/zhenskie-sportivnie-shorti', '/catalog/zhenshhini/brjuki', '/catalog/zhenshhini/bridzhi', '/catalog/zhenshhini/zhenskie-losini-dlja-fitnesa', '/catalog/zhenshhini/zhenskoe-termobele', '/catalog/zhenshhini/kupalniki', '/catalog/zhenshhini/jubka', '/catalog/zhenshhini/plate']
+
+* catalog: /catalog/zhenshhini/novinki
+* get url: [https://argoclassic.ru/catalog/zhenshhini/novinki]
+* caturls: []
+
+* ------------------------------
+* page: /catalog/zhenshhini/novinki
+* get url: [https://argoclassic.ru/catalog/zhenshhini/novinki]
+* pages: ['/catalog/zhenshhini/topi-futbolki/top-Top-820-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij', '/catalog/zhenshhini/topi-futbolki/top-Top-817-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-793-zelenij', '/catalog/zhenshhini/topi-futbolki/top-Top-819-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-818-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-801-krasnij', '/catalog/zhenshhini/topi-futbolki/top-Top-822-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-331-fioletovij-chernij', '/catalog/zhenshhini/topi-futbolki/top-Top-823-belij', '/catalog/zhenshhini/topi-futbolki/top-Top-824-belij', '/catalog/zhenshhini/zhenskoe-termobele/top-Top-814-melanzh']
+
+* do good colors: https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-820-belij
+* get url: [https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-820-belij]
+ colors urls: []
+ good colors urls: ['https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-820-belij']
+
+* do good: https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-820-belij
+* get url: [https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-820-belij]
+ a: ['Топ Top.820']
+ name: Топ Top.820
+ a: [' Top.820']
+ art: Top.820
+ a: ['Cotton - материал из натуральных волокон, который удобен в носке, быстро впитывает и отводит от тела влагу, хорошо пропускает воздух и не раздражает кожу. Хлопок гигиеничен, обладает устойчивостью к истиранию и разрыву, помогает балансировать температуру для избегания перегрева.\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ', 'В стирке требует более бережного обращения. Изделия с принтом рекомендуется стирать вывернутыми на изнаночную сторону при температуре 30 градусов.', 'ВНИМАНИЕ! Оттенок цвета ткани может отличаться в зависимости от партии товара, также могут быть незначительные отличия цветовых оттенков разных деталей одного изделия. Производители ткани не считают это браком, объясняя это технологическими особенностями производства. Цветовая гамма товара может быть изменена (в рамках допуска) производителем трикотажных полотен в зависимости от серии поставки без предварительного уведомления.', 'В связи с этим, подбор комплекта одежды в одном оттенке возможен только в процессе формирования единого заказа.', 'Состав: 92% Cotton,\xa08% Elastane']
+ descr: Cotton - материал из натуральных волокон, который удобен в носке, быстро впитывает и отводит от тела влагу, хорошо пропускает воздух и не раздражает кожу. Хлопок гигиеничен, обладает устойчивостью к истиранию и разрыву, помогает балансировать температуру для избегания перегрева. В стирке требует более бережного обращения. Изделия с принтом рекомендуется стирать вывернутыми на изнаночную сторону при температуре 30 градусов. ВНИМАНИЕ! Оттенок цвета ткани может отличаться в зависимости от партии товара, также могут быть незначительные отличия цветовых оттенков разных деталей одного изделия. Производители ткани не считают это браком, объясняя это технологическими особенностями производства. Цветовая гамма товара может быть изменена (в рамках допуска) производителем трикотажных полотен в зависимости от серии поставки без предварительного уведомления. В связи с этим, подбор комплекта одежды в одном оттенке возможен только в процессе формирования единого заказа. Состав: 92% Cotton, 8% Elastane
+ a: ['\r\n                  790.00 руб.              ']
+ price: 790
+ a: ['/uploads/gallery/f6/f6270b030da87e5843a9df554f71a29e.jpg', '/uploads/gallery/42/42fff14483c9697be9221e02112836c8.jpg']
+ imgurl: https://argoclassic.ru/uploads/gallery/f6/f6270b030da87e5843a9df554f71a29e.jpg
+ a: ['белый']
+ color: белый
+ sz: ['42', '44', '46', '48']
+ c: ['Мало', 'Мало', 'Мало', 'Мало']
+ sizeavail: Мало:Мало:Мало:Мало
+42 Мало
+44 Мало
+46 Мало
+48 Мало
+ sizes: 42:44:46:48
+
+* do good colors: https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij
+* get url: [https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij]
+ colors urls: ['/catalog/zhenshhini/topi-futbolki/top-Top-796-nebesnij']
+ good colors urls: ['https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij', 'https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-nebesnij']
+
+* do good: https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij
+* get url: [https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-chernij]
+ a: ['Топ Top.796']
+ name: Топ Top.796
+ a: [' Top.796']
+ art: Top.796
+ a: ['Cotton - материал из натуральных волокон, который удобен в носке, быстро впитывает и отводит от тела влагу, хорошо пропускает воздух и не раздражает кожу. Хлопок гигиеничен, обладает устойчивостью к истиранию и разрыву, помогает балансировать температуру для избегания перегрева.\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ', 'В стирке требует более бережного обращения. Изделия с принтом рекомендуется стирать вывернутыми на изнаночную сторону при температуре 30 градусов.', 'ВНИМАНИЕ! Оттенок цвета ткани может отличаться в зависимости от партии товара, также могут быть незначительные отличия цветовых оттенков разных деталей одного изделия. Производители ткани не считают это браком, объясняя это технологическими особенностями производства. Цветовая гамма товара может быть изменена (в рамках допуска) производителем трикотажных полотен в зависимости от серии поставки без предварительного уведомления.', 'В связи с этим, подбор комплекта одежды в одном оттенке возможен только в процессе формирования единого заказа.', 'Состав: 92% Cotton,\xa08% Elastane']
+ descr: Cotton - материал из натуральных волокон, который удобен в носке, быстро впитывает и отводит от тела влагу, хорошо пропускает воздух и не раздражает кожу. Хлопок гигиеничен, обладает устойчивостью к истиранию и разрыву, помогает балансировать температуру для избегания перегрева. В стирке требует более бережного обращения. Изделия с принтом рекомендуется стирать вывернутыми на изнаночную сторону при температуре 30 градусов. ВНИМАНИЕ! Оттенок цвета ткани может отличаться в зависимости от партии товара, также могут быть незначительные отличия цветовых оттенков разных деталей одного изделия. Производители ткани не считают это браком, объясняя это технологическими особенностями производства. Цветовая гамма товара может быть изменена (в рамках допуска) производителем трикотажных полотен в зависимости от серии поставки без предварительного уведомления. В связи с этим, подбор комплекта одежды в одном оттенке возможен только в процессе формирования единого заказа. Состав: 92% Cotton, 8% Elastane
+ a: ['\r\n                  930.00 руб.              ']
+ price: 930
+ a: ['/uploads/gallery/73/73aa9460a12e330e8b2728b983de8915.jpg', '/uploads/gallery/d0/d0a2994db0a0fe7239d1bbf9db3fe228.jpg', '/uploads/gallery/0f/0fa359809d06650b01fa2808518ba469.jpg']
+ imgurl: https://argoclassic.ru/uploads/gallery/73/73aa9460a12e330e8b2728b983de8915.jpg
+ a: ['черный']
+ color: черный
+ sz: ['42-44', '46-48']
+ c: ['Много', 'Много']
+ sizeavail: Много:Много
+42-44 Много
+46-48 Много
+ sizes: 42-44:46-48
+
+* do good: https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-nebesnij
+* get url: [https://argoclassic.ru/catalog/zhenshhini/topi-futbolki/top-Top-796-nebesnij]
+ a: ['Топ Top.796']
+ name: Топ Top.796
+ a: [' Top.796']
+ art: Top.796
+ a: ['Cotton - материал из натуральных волокон, который удобен в носке, быстро впитывает и отводит от тела влагу, хорошо пропускает воздух и не раздражает кожу. Хлопок гигиеничен, обладает устойчивостью к истиранию и разрыву, помогает балансировать температуру для избегания перегрева.\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ', 'В стирке требует более бережного обращения. Изделия с принтом рекомендуется стирать вывернутыми на изнаночную сторону при температуре 30 градусов.', 'ВНИМАНИЕ! Оттенок цвета ткани может отличаться в зависимости от партии товара, также могут быть незначительные отличия цветовых оттенков разных деталей одного изделия. Производители ткани не считают это браком, объясняя это технологическими особенностями производства. Цветовая гамма товара может быть изменена (в рамках допуска) производителем трикотажных полотен в зависимости от серии поставки без предварительного уведомления.', 'В связи с этим, подбор комплекта одежды в одном оттенке возможен только в процессе формирования единого заказа.', 'Состав: 92% Cotton,\xa08% Elastane']
+ descr: 
