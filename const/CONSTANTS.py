@@ -6,7 +6,7 @@ from PyQt5.QtCore import pyqtSignal
 
 SCRIPT_NAMES = \
     [
-        'агата', 'арго', 'эталина',
+        'агата', 'арго', 'эйс',
         'фиорита', 'гинда', 'жанели',
         'джети', 'куртки', 'лкрафт',
         'сумки\nстиль', 'босса\nнова',
@@ -81,7 +81,7 @@ NAMES_TO_SCRIPTS = \
         'раш': '/home/vint/workspace/rash.su/rashParser.py'
     }
 
-SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
+SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эйс': 'ace',
            'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
            'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
            'сумкистиль': 'sumki-style', 'боссанова': 'triko',

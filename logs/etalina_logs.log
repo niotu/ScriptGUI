@@ -1,5 +1,0 @@
-exc: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'etalina.ru'. (_ssl.c:997)>
-Traceback (most recent call last):
-  File "/home/vint/workspace/etalina.ru/./etalina.py", line 92, in <module>
-    caturls= catdoc.xpath( ".//ul[@class='list-category']//a/@href" )
-AttributeError: 'str' object has no attribute 'xpath'

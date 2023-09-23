@@ -1,6 +1,6 @@
 from PyQt5.QtCore import QProcess
 from PyQt5.QtGui import QColor, QPixmap, QTextCursor
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMenu
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -106,6 +106,9 @@ class MainWindow(QWidget, Ui_Form):
             label.setPixmap(self.error_icon)
 
     def start_script(self, name):
+        if name == 'ЭЙС':
+            self.run_ace()
+
         prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
         logname = SPECIAL[name.lower().replace('\n', '')]
         path = prname
@@ -115,6 +118,7 @@ class MainWindow(QWidget, Ui_Form):
 
         process = QProcess(self)
         task.process = process
+
 
         if prname[0] == '/':
             process.setWorkingDirectory('/' + '/'.join(prname.split('/')[:-1]))
@@ -126,6 +130,22 @@ class MainWindow(QWidget, Ui_Form):
         process.start(path)
         # print(path)?
         # logger.write(logname, path)
+
+    def run_ace(self):
+        name = 'ace'
+        path = ''
+        task = Task()
+        self.tasks.append(task)
+        
+        process = QProcess(self)
+        task.process = process
+
+        process.setObjectName(name)
+        process.errorOccurred.connect(lambda: self.done(process, True))
+        process.finished.connect(lambda: self.done(process))
+        process.readyRead.connect(lambda: self.readout(process))
+        process.readyReadStandardError.connect(lambda: self.readerror(process))
+        process.start(path)
 
     def readout(self, process):
         name = process.objectName()
