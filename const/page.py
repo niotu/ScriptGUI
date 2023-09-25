@@ -16,9 +16,9 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(1440, 860)
         Form.setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0.051, stop:0\n"
-"                rgba(55, 62, 67, 255), stop:0.159091 rgba(55, 62, 67, 255), stop:0.767045 rgba(27, 56, 78, 255), stop:1\n"
-"                rgba(11, 36, 54, 255));\n"
-"            ")
+                           "                rgba(55, 62, 67, 255), stop:0.159091 rgba(55, 62, 67, 255), stop:0.767045 rgba(27, 56, 78, 255), stop:1\n"
+                           "                rgba(11, 36, 54, 255));\n"
+                           "            ")
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
@@ -34,12 +34,12 @@ class Ui_Form(object):
         self.label.setSizePolicy(sizePolicy)
         self.label.setMinimumSize(QtCore.QSize(1030, 52))
         self.label.setStyleSheet("border-radius: 15px;\n"
-"                                    font-family: \'Inter\';\n"
-"                                    font-style: normal;\n"
-"                                    font-weight: 400;\n"
-"                                    font-size: 20px;\n"
-"                                    background: rgba(195, 253, 31, 1.0)\n"
-"                                ")
+                                 "                                    font-family: \'Inter\';\n"
+                                 "                                    font-style: normal;\n"
+                                 "                                    font-weight: 400;\n"
+                                 "                                    font-size: 20px;\n"
+                                 "                                    background: rgba(195, 253, 31, 1.0)\n"
+                                 "                                ")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.horizontalLayout_4.addWidget(self.label)
@@ -48,12 +48,12 @@ class Ui_Form(object):
         self.label_2 = Pic(Form)
         self.label_2.setEnabled(True)
         self.label_2.setStyleSheet("border-radius: 15px;\n"
-"                                    font-family: \'Inter\';\n"
-"                                    font-style: normal;\n"
-"                                    font-weight: 400;\n"
-"                                    font-size: 20px;\n"
-"                                    background: rgba(195, 253, 31, 1.0)\n"
-"                                ")
+                                   "                                    font-family: \'Inter\';\n"
+                                   "                                    font-style: normal;\n"
+                                   "                                    font-weight: 400;\n"
+                                   "                                    font-size: 20px;\n"
+                                   "                                    background: rgba(195, 253, 31, 1.0)\n"
+                                   "                                ")
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_4.addWidget(self.label_2)
         self.gridLayout.addLayout(self.horizontalLayout_4, 0, 0, 1, 1)
@@ -137,7 +137,7 @@ class Ui_Form(object):
         self.pushButton_16.setText("")
         self.pushButton_16.setObjectName("pushButton_16")
         self.horizontalLayout_5.addWidget(self.pushButton_16)
-        spacerItem12 = QtWidgets.QSpacerItem(250, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        spacerItem12 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_5.addItem(spacerItem12)
         self.pushButton_17 = QtWidgets.QPushButton(Form)
         self.pushButton_17.setText("")
@@ -289,11 +289,13 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "Выберите скрипты для запуска:"))
         self.label_2.setText(_translate("Form", "TextLabel"))
-from pic import Pic
 
+
+from pic import Pic
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
     ui = Ui_Form()

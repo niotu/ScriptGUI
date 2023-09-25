@@ -6,11 +6,12 @@ from PyQt5.QtCore import pyqtSignal
 
 SCRIPT_NAMES = \
     [
-        'агата', 'арго', 'эйс',
+        'агата', 'арго', 'эталина',
         'фиорита', 'гинда', 'жанели',
         'джети', 'куртки', 'лкрафт',
         'сумки\nстиль', 'босса\nнова',
-        "синий\nлен", 'клевер\nмедиа', 'раш'
+        "синий\nлен", 'клевер\nмедиа', 'раш',
+        "ЭЙС", "Фанси\nмода"
     ]
 
 COMMON_STYLE = (
@@ -78,16 +79,18 @@ NAMES_TO_SCRIPTS = \
         'сумкистиль': 'sumki-style', 'боссанова': 'triko',
         "синийлен": '/home/vint/workspace/siniylen.ru/siniylen.py',
         'клевермедиа': '/home/vint/workspace/clever-media/clever-media.py',
-        'раш': '/home/vint/workspace/rash.su/rashParser.py'
+        'раш': '/home/vint/workspace/rash.su/rashParser.py',
+        'эйс': '/home/vint/workspace2/ScriptGUI/difficult/do_ace.sh',
+        'фансимода': '/home/vint/workspace2/ScriptGUI/difficult/fancy.sh'
     }
 
-SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эйс': 'ace',
+SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
            'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
            'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
            'сумкистиль': 'sumki-style', 'боссанова': 'triko',
            "синийлен": 'siniylen',
            'клевермедиа': 'clever-media',
-           'раш': 'rash'}
+           'раш': 'rash', 'эйс': 'ace', 'фансимода': 'fancymoda'}
 
 OUTPUT_DIR = 'output/'
 

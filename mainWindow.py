@@ -1,6 +1,6 @@
 from PyQt5.QtCore import QProcess
 from PyQt5.QtGui import QColor, QPixmap, QTextCursor
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMenu
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -43,7 +43,8 @@ class MainWindow(QWidget, Ui_Form):
 
         self.buttons = [self.pushButton, self.pushButton_2, self.pushButton_3, self.pushButton_4, self.pushButton_5,
                         self.pushButton_6, self.pushButton_7, self.pushButton_8, self.pushButton_9, self.pushButton_10,
-                        self.pushButton_11, self.pushButton_12, self.pushButton_13, self.pushButton_14]
+                        self.pushButton_11, self.pushButton_12, self.pushButton_13, self.pushButton_14,
+                        self.pushButton_16, self.pushButton_17]
 
         for i, button in enumerate(self.buttons):
             text = SCRIPT_NAMES[i].upper()
@@ -82,7 +83,8 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_12.clicked.connect(lambda: self.start_current(self.pushButton_12))
         self.pushButton_13.clicked.connect(lambda: self.start_current(self.pushButton_13))
         self.pushButton_14.clicked.connect(lambda: self.start_current(self.pushButton_14))
-
+        self.pushButton_16.clicked.connect(lambda: self.start_current(self.pushButton_16))
+        self.pushButton_17.clicked.connect(lambda: self.start_current(self.pushButton_17))
         self.tasks = []
 
     def start_all(self):
@@ -91,6 +93,7 @@ class MainWindow(QWidget, Ui_Form):
 
     def start_current(self, button):
         self.set_state(button, 'loading')
+        print('loading state on', button.text())
         self.start_script(button.text())
 
     def set_state(self, button, state):
@@ -106,12 +109,9 @@ class MainWindow(QWidget, Ui_Form):
             label.setPixmap(self.error_icon)
 
     def start_script(self, name):
-        if name == 'ЭЙС':
-            self.run_ace()
-
-        prname = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
-        logname = SPECIAL[name.lower().replace('\n', '')]
-        path = prname
+        process_name = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
+        # logname = SPECIAL[name.lower().replace('\n', '')]
+        path = process_name
 
         task = Task()
         self.tasks.append(task)
@@ -119,9 +119,10 @@ class MainWindow(QWidget, Ui_Form):
         process = QProcess(self)
         task.process = process
 
-
-        if prname[0] == '/':
-            process.setWorkingDirectory('/' + '/'.join(prname.split('/')[:-1]))
+        # if process_name[0] == '/':
+        wd = '/' + '/'.join(process_name.split('/')[:-1])
+        process.setWorkingDirectory(wd)
+        #     print(f"changed dir from {process_name} to {wd}")
         process.setObjectName(name)
         process.errorOccurred.connect(lambda: self.done(process, True))
         process.finished.connect(lambda: self.done(process))
@@ -130,22 +131,6 @@ class MainWindow(QWidget, Ui_Form):
         process.start(path)
         # print(path)?
         # logger.write(logname, path)
-
-    def run_ace(self):
-        name = 'ace'
-        path = ''
-        task = Task()
-        self.tasks.append(task)
-        
-        process = QProcess(self)
-        task.process = process
-
-        process.setObjectName(name)
-        process.errorOccurred.connect(lambda: self.done(process, True))
-        process.finished.connect(lambda: self.done(process))
-        process.readyRead.connect(lambda: self.readout(process))
-        process.readyReadStandardError.connect(lambda: self.readerror(process))
-        process.start(path)
 
     def readout(self, process):
         name = process.objectName()
@@ -165,13 +150,13 @@ class MainWindow(QWidget, Ui_Form):
 
     def done(self, process, is_error=False):
         state = process.exitCode()
-        print(state)
         name = process.objectName()
         logname = SPECIAL[name.lower().replace('\n', '')]
         name = name.upper()
         logger.write(logname, process.readAll())
         # logger.write(logname, str(str(state) + '--' + name.replace('\n', ' ')))
         widget = self.find_widget_by_name(name)
+        print("state:", state)
         if state == 0 and not is_error:
             # logger.write(logname, str('DONE DONE DONE ' + name.replace('\n', ' ')))
             self.set_state(widget, 'done')

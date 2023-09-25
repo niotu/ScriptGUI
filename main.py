@@ -41,3 +41,4 @@ if __name__ == "__main__":
     cleanup()
     print("Starting...")
     main()
+    print("Closing")
