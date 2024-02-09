@@ -1,6 +1,8 @@
-from const.CONSTANTS import *
+from PyQt5.QtCore import QProcess
 
-for name in NAMES_TO_SCRIPTS.values():
-    name = name.replace('\n', '')
-    with open(f'logs/{name}_logs.log', 'w') as fh:
-        fh.write('')
+pth = "python C:/Users/ni0tu/work/PycharmProjects/Parser/xlsxParser/allabuena.py C:/Users/ni0tu/work/PycharmProjects/Parser/xlsxParser/inp_files/inp.xlsx"
+
+process = QProcess()
+process.start(pth)
+process.waitForFinished()
+print(process.errorString())

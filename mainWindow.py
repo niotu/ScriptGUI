@@ -115,28 +115,35 @@ class MainWindow(QWidget, Ui_Form):
         # logname = SPECIAL[name.lower().replace('\n', '')]
         path = process_name
         if "%f" in path:
-            dailApp = QApplication(sys.argv)
-
-            dial = QFileDialog.getOpenFileName(None, "Choose file")
+            dial = QFileDialog.getOpenFileName(None, "Choose file", "/home")
             print(dial)
-            path = path.replace("%f", " " + dial)
-
+            path = path.replace("%f", dial[0])
+        print(path)
         task = Task()
         self.tasks.append(task)
 
         process = QProcess(self)
         task.process = process
-
-        # if process_name[0] == '/':
-        wd = '/' + '/'.join(process_name.split('/')[:-1])
+        process_name = process_name.replace("python ", "").replace("%f")
+        if process_name[0] != '/':
+            wd = '/' + '/'.join(process_name.split('/')[:-1])
+        else:
+            wd = process_name
+        # wd = "C:/Users/ni0tu/work/PycharmProjects/Parser/xlsxParser"
+        print(wd)
         process.setWorkingDirectory(wd)
         #     print(f"changed dir from {process_name} to {wd}")
         process.setObjectName(name)
         process.errorOccurred.connect(lambda: self.done(process, True))
+        # print("error connecting")
         process.finished.connect(lambda: self.done(process))
+        # print("2")
         process.readyRead.connect(lambda: self.readout(process))
+        # print("3")
         process.readyReadStandardError.connect(lambda: self.readerror(process))
+        # print("4")
         process.start(path)
+        # print("5")
         # print(path)?
         # logger.write(logname, path)
 
@@ -157,7 +164,10 @@ class MainWindow(QWidget, Ui_Form):
         logger.write(logname, err)
 
     def done(self, process, is_error=False):
+        print(f"if error: {is_error}")
+        print(f"proc err {process.errorString()}")
         state = process.exitCode()
+        print("11111111111111111111111111111111")
         name = process.objectName()
         logname = SPECIAL[name.lower().replace('\n', '')]
         name = name.upper()

@@ -1,6 +1,7 @@
 import sys
 
 from PyQt5 import QtCore
+from PyQt5.QtCore import QProcess
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSizePolicy
 
