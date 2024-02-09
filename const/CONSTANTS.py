@@ -9,7 +9,7 @@ SCRIPT_NAMES = \
         'агата', 'арго', 'эталина',
         'фиорита', 'гинда', 'жанели',
         'джети', 'куртки', 'лкрафт',
-        'сумки\nстиль', 'босса\nнова',
+        'сумки\nстиль', 'алла\nбуена',
         "синий\nлен", 'клевер\nмедиа', 'раш',
         "ЭЙС", "Фанси\nмода"
     ]
@@ -76,7 +76,7 @@ NAMES_TO_SCRIPTS = \
         'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
         'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
         'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
-        'сумкистиль': 'sumki-style', 'боссанова': 'triko',
+        'сумкистиль': 'sumki-style', 'аллабуена': '/home/vint/workspace/allabuena.ru/allabuena.py %f',
         "синийлен": '/home/vint/workspace/siniylen.ru/siniylen.py',
         'клевермедиа': '/home/vint/workspace/clever-media/clever-media.py',
         'раш': '/home/vint/workspace/rash.su/rashParser.py',
@@ -87,7 +87,7 @@ NAMES_TO_SCRIPTS = \
 SPECIAL = {'агата': 'agata', 'арго': 'argo', 'эталина': 'etalina',
            'фиорита': 'fiorita', 'гинда': 'guinda', 'жанели': 'janelli',
            'джети': 'jetty', 'куртки': 'kurtki', 'лкрафт': 'lcraft',
-           'сумкистиль': 'sumki-style', 'боссанова': 'triko',
+           'сумкистиль': 'sumki-style', 'аллабуена': 'xlsPrser',
            "синийлен": 'siniylen',
            'клевермедиа': 'clever-media',
            'раш': 'rash', 'эйс': 'ace', 'фансимода': 'fancymoda'}

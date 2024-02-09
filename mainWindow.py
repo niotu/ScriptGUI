@@ -1,6 +1,8 @@
+import sys
+
 from PyQt5.QtCore import QProcess
 from PyQt5.QtGui import QColor, QPixmap, QTextCursor
-from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu
+from PyQt5.QtWidgets import QWidget, QGraphicsDropShadowEffect, QLabel, QMessageBox, QMenu, QApplication, QFileDialog
 
 from const.CONSTANTS import *
 from const.page import Ui_Form
@@ -112,6 +114,12 @@ class MainWindow(QWidget, Ui_Form):
         process_name = NAMES_TO_SCRIPTS[name.lower().replace('\n', '')]
         # logname = SPECIAL[name.lower().replace('\n', '')]
         path = process_name
+        if "%f" in path:
+            dailApp = QApplication(sys.argv)
+
+            dial = QFileDialog.getOpenFileName(None, "Choose file")
+            print(dial)
+            path = path.replace("%f", " " + dial)
 
         task = Task()
         self.tasks.append(task)
