@@ -125,10 +125,10 @@ class MainWindow(QWidget, Ui_Form):
         process = QProcess(self)
         task.process = process
         process_name = process_name.replace(" %f", '')
-        if process_name[0] == '/':
-            wd = '/' + '/'.join(process_name.split('/')[:-1])
-        else:
-            wd = process_name
+        # if process_name[0] == '/':
+        wd = '/' + '/'.join(process_name.split('/')[:-1])
+        # else:
+        #     wd = process_name
         print(wd)
         process.setWorkingDirectory(wd)
         process.setObjectName(name)
