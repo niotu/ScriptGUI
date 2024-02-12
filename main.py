@@ -36,7 +36,7 @@ def cleanup():
 
     for f in fnames:
         if f != 'errors_QT_logs.log':
-            with open('logs/'+f, 'w') as f:
+            with open('logs/' + f, 'w') as f:
                 f.truncate(0)
 
 

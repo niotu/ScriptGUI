@@ -124,7 +124,7 @@ class MainWindow(QWidget, Ui_Form):
 
         process = QProcess(self)
         task.process = process
-        process_name = process_name.replace("python ", "").replace("%f", '')
+        process_name = process_name.replace(" %f", '')
         if process_name[0] == '/':
             wd = '/' + '/'.join(process_name.split('/')[:-1])
         else:
@@ -139,7 +139,6 @@ class MainWindow(QWidget, Ui_Form):
         process.readyReadStandardError.connect(lambda: self.readerror(process))
 
         process.start(path)
-
 
     def readout(self, process):
         name = process.objectName()

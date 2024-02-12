@@ -1,4 +1,4 @@
-from os import walk, path
+from os import walk
 import sys
 from argparse import ArgumentParser
 from shutil import copy
@@ -12,7 +12,7 @@ curr = p.parse_args().curr
 
 dailApp = QApplication(sys.argv)
 
-dial = QFileDialog.getExistingDirectory(None, "Choose dir", directory+curr)
+dial = QFileDialog.getExistingDirectory(None, "Choose dir", directory + curr)
 print(dial)
 dir = dial
 
@@ -20,5 +20,5 @@ files = list(walk(dir))[0][2]
 print(files)
 
 for file in files:
-    print(dir+'/'+file, directory[:-1])
-    copy(dir+'/'+file, directory[:-1])
+    print(dir + '/' + file, directory[:-1])
+    copy(dir + '/' + file, directory[:-1])
