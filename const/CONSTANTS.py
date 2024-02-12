@@ -1,9 +1,5 @@
 import io
 
-from PyQt5 import QtGui
-from PyQt5 import QtWidgets
-from PyQt5.QtCore import pyqtSignal
-
 SCRIPT_NAMES = \
     [
         'агата', 'арго', 'эталина',
