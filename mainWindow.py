@@ -42,6 +42,8 @@ class MainWindow(QWidget, Ui_Form):
         self.pushButton_15.setGraphicsEffect(shadow)
         self.pushButton_15.setText('ЗАПУСТИТЬ\nВСЕ')
         self.pushButton_15.clicked.connect(self.start_all)
+        self.pushButton_11.setToolTip("Удалите первые строчки до слова Коллекция")
+        self.setToolTipDuration(0)
 
         self.buttons = [self.pushButton, self.pushButton_2, self.pushButton_3, self.pushButton_4, self.pushButton_5,
                         self.pushButton_6, self.pushButton_7, self.pushButton_8, self.pushButton_9, self.pushButton_10,

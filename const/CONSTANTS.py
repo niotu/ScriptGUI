@@ -24,6 +24,8 @@ COMMON_STYLE = (
         font-weight: 400;
         font-size: 20px
     }
+    QToolTip{background: white; font-size: 24px;
+    }
     QPushButton[state='common']{
         background: rgba(195, 253, 31, 1.0);
     }
